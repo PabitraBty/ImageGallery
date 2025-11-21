@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Image Gallery</h1>
+        <p class="lead">Explore the amazing images</p>
+      </div>
+
+      <div class="controls" role="toolbar" aria-label="Gallery filters">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="nature">Nature</button>
+        <button class="btn" data-filter="animals">Animals</button>
+        <button class="btn" data-filter="food">Food</button>
+        <div class="search">
+          <input id="search" placeholder="Search title or category..." aria-label="Search images" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery" id="gallery">
+
+        <article class="card" data-cat="nature" data-title="Clouds and Mountain">
+          <img src="assets/360_F_201780104_hetXS26W8alnsbDKbpnr4sVizJfiO12w.jpg" alt="Clouds and Mountain"/>
+          <div class="meta">Forest and Mountain</div>
+          <div class="tags"><span class="tag">Nature</span></div>
+        </article>
+
+        <article class="card" data-cat="nature" data-title="Lake and Mountain">
+          <img src="assets/beautiful-lake-mountains_395237-44.avif" alt="Lake and Mountain"/>
+          <div class="meta">Lake and Mountain</div>
+          <div class="tags"><span class="tag">Nature</span></div>
+        </article>
+
+        <article class="card" data-cat="nature" data-title="Sunset">
+          <img src="assets/download (5).jpeg" alt="Beautiful Sunset"/>
+          <div class="meta">Sunset</div>
+          <div class="tags"><span class="tag">Nature</span></div>
+        </article>
+
+        <article class="card" data-cat="food" data-title="Salmon">
+          <img src="assets/fried-salmon-steak-cooked-green-600nw-2489026949.webp" alt="Salmon"/>
+          <div class="meta">Fried Salmon Steak</div>
+          <div class="tags"><span class="tag">Food</span></div>
+        </article>
+
+        <article class="card" data-cat="food" data-title="Dessert Plate">
+          <img src="assets/pexels-ash-craig-122861-376464.jpg" alt="Delicious dessert plate"/>
+          <div class="meta">Pancake</div>
+          <div class="tags"><span class="tag">Food</span></div>
+        </article>
+
+        <article class="card" data-cat="animals" data-title="Red Panda">
+          <img src="assets/cute-red-panda.jpg" alt="Red Panda"/>
+          <div class="meta">Cute Red Panda</div>
+          <div class="tags"><span class="tag">Animals</span></div>
+        </article>
+
+        <article class="card" data-cat="animals" data-title="Deer">
+          <img src="assets/Fallow-deer-dama-dama.webp" alt="A group of Deer"/>
+          <div class="meta">Deer</div>
+          <div class="tags"><span class="tag">Animals</span></div>
+        </article>
+
+        <article class="card" data-cat="animals" data-title="Lion">
+          <img src="assets/lion-Kenya-Masai-Mara-National-Reserve.webp" alt="Lion"/>
+          <div class="meta">Lion</div>
+          <div class="tags"><span class="tag">Animals</span></div>
+        </article>
+
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+    
+</body>
+</html>
